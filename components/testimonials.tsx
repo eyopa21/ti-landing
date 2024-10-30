@@ -1,4 +1,4 @@
-import { Card, CardContent } from "@/components/ui/card";
+
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Separator } from "@/components/ui/separator"
 
@@ -13,7 +13,7 @@ const Component = ({ name, title, quote, avatarSrc }) => (
               {name
                 ? name
                     ?.split(" ")
-                    .map((n) => n[0])
+                    .map((n: string) => n[0])
                     .join("")
                     .toUpperCase()
                 : "U"}
