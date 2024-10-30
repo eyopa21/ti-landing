@@ -24,7 +24,7 @@ function Layout({ children, pageContext }: { children: React.ReactNode; pageCont
 
 function Slot({ children }: { children: React.ReactNode }) {
   return (
-    <div id="page-container">
+    <div id="page-container" className="">
       <div
         id="page-content"
        

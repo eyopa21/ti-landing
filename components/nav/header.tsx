@@ -38,7 +38,7 @@ export default function Header() {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-            <Button  className="bg-teal-500">View Your Rate</Button>
+            <Button  className="">View Your Rate</Button>
           </div>
         </div>
       </div>
