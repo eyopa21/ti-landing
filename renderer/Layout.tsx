@@ -27,13 +27,9 @@ function Slot({ children }: { children: React.ReactNode }) {
     <div id="page-container">
       <div
         id="page-content"
-        style={{
-          padding: 20,
-          paddingBottom: 50,
-          minHeight: '100vh'
-        }}
+       
       >
-        {children} 
+    {children}
       </div>
     </div>
   )
