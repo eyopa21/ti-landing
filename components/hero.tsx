@@ -30,11 +30,11 @@ export default function Hero() {
             </div>
             <div className="inline-flex  gap-4 py-8">
 
-              <Button  size={"lg"} >
+              <Button  size={"default"} >
                 View Your Rates
                 <MoveRight />
                 </Button>
-              <Button variant={'outline'} size={"lg"} className="bg-transparent border-white text-white border-2" >Learn More</Button>
+              <Button  variant={'outline'} size={"default"} className="bg-transparent border-white text-white border-2" >Learn More</Button>
             </div>
           </div>
 
