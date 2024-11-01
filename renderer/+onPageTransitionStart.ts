@@ -8,5 +8,5 @@ const onPageTransitionStart: OnPageTransitionStartAsync = async (): ReturnType<O
   const pageContainer = document.querySelector('#page-container')!
   pageContainer.classList.add('page-is-transitioning')
   // Wait briefly for the transition effect to begin before starting the transition
-  await new Promise(resolve => setTimeout(resolve, 1000))
+  await new Promise(resolve => setTimeout(resolve, 500))
 }
