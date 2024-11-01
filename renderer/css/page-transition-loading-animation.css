@@ -24,3 +24,14 @@ body.page-is-transitioning #page-container::before {
 body.page-is-transitioning #page-content {
   opacity: 0.17;
 }
+
+
+/* Base style for smooth transitions */
+#page-container {
+  transition: transform 0.4s ease-in-out;
+}
+
+/* Sliding transition effect */
+#page-container.page-is-transitioning {
+  transform: translateX(100%);
+}

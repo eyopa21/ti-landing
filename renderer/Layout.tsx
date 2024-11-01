@@ -19,9 +19,6 @@ function Layout({ children, pageContext }: { children: React.ReactNode; pageCont
 }
 
 
-
-
-
 function Slot({ children }: { children: React.ReactNode }) {
   return (
     <div id="page-container" className="bg-gray-50">

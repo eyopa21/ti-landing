@@ -10,7 +10,6 @@ export default function Header() {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
   }
-
   return (
     <header className="bg-teal-950 shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -38,7 +37,13 @@ export default function Header() {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-            <Button  className="">View Your Rate</Button>
+           
+            <Link href="/about">
+            <Button className="">
+            View Your Rate
+
+            </Button>
+            </Link>
           </div>
         </div>
       </div>
@@ -66,14 +71,16 @@ export default function Header() {
 function Logo() {
   return (
     <div className="flex justify-start lg:w-0 lg:flex-1">
-    <a href="/" className="flex  lg:hidden items-center">
-      <span className="ml-2 text-3xl font-bold text-teal-500">R</span>
+    <Link href="/" className="flex  lg:hidden items-center">
+      <span className="ml-2 text-3xl font-bold text-teal-500">H=</span>
       <span className=" text-3xl font-bold text-white">R</span>
-    </a>
-    <a href="/" className="lg:flex  hidden  items-center">
+    </Link>
+    
+  
+    <Link href="/" className="lg:flex  hidden  items-center">
       <span className="ml-2 text-3xl font-bold text-teal-500">Hardship</span>
       <span className=" text-3xl font-bold text-white">relief</span>
-    </a>
+    </Link>
   </div>
   )
 }
