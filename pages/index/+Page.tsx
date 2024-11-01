@@ -4,6 +4,7 @@ import ScheduleMeeting from "../../components/scheduleMeeting";
 import Testimonials from "../../components/testimonials";
 import Contact from "../../components/contact";
 import Header from "../../components/nav/header";
+import MobileTestimonials from "../../components/mobileTestimonails";
 
 export { Page };
 
@@ -13,9 +14,10 @@ function Page() {
       <Hero />
       <Steps />
       <ScheduleMeeting />
-      <Testimonials />
+      <MobileTestimonials/>
+      {/* <Testimonials />
       <Contact />
-      <Header/>
+      <Header/> */}
     </>
   );
 }

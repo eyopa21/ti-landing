@@ -15,10 +15,10 @@ export default function Hero() {
         >
           <div className="mx-2 text-center  -mt-32">
             <div className="space-y-8">
-              <h1 className="text-gray-100 font-extrabold text-3xl xs:text-5xl md:text-[5.5rem]">
+              <h1 className="text-gray-100 font-extrabold text-2xl  md:text-[5.5rem]">
                 <span className="text-teal-500">Fast-Track Your Finances</span>
               </h1>
-              <h2 className="text-gray-200 font-extrabold text-3xl xs:text-4xl md:text-7xl leading-tight line-clamp-2">
+              <h2 className="text-gray-200 font-extrabold text-2xl  md:text-7xl leading-tight line-clamp-2">
                 Personal loans made
                 <br />
                 simple Online!
@@ -32,15 +32,15 @@ export default function Hero() {
               <Button
                 variant={"outline"}
                 size={"default"}
-                className="bg-transparent border-white text-white border-2"
+                className="bg-transparent hidden lg:block border-white text-white border-2"
               >
                 Learn More
               </Button>
             </div>
           </div>
         </div>
-        <section className="container mx-auto px-32 py-12 absolute bottom-0">
-          <div className=" grid grid-cols-1 md:grid-cols-3 bg-white rounded-lg p-4">
+        <section className="container mx-auto lg:px-32 lg:py-12 absolute bottom-0 bg-white">
+          <div className=" grid grid-cols-1 lg:grid-cols-3  rounded-lg p-4">
             <Card className="rounded-none border-none shadow-none">
               <CardContent className="p-4 flex gap-4">
                 <div className="bg-white text-black border-black border-2 rounded-full h-16 w-16 flex items-center justify-center flex-shrink-0">
@@ -55,7 +55,7 @@ export default function Hero() {
                 </div>
               </CardContent>
             </Card>
-            <Card className=" rounded-none border-y-0 shadow-none">
+            <Card className=" rounded-none border-x-0 lg:border-x-2 border-y-0   shadow-none">
               <CardContent className="flex gap-4 p-4 ">
                 <div className="bg-white text-black border-black border-2 rounded-full h-16 w-16 flex items-center justify-center flex-shrink-0">
                   <DollarSign className="h-8 w-8 text-primary " />
@@ -70,8 +70,8 @@ export default function Hero() {
                 </div>
               </CardContent>
             </Card>
-            <Card className="rounded-none border-none shadow-none">
-              <CardContent className="p-2 flex gap-4">
+            <Card className="rounded-none border-none  shadow-none">
+              <CardContent className="p-4 flex gap-4">
                 <div className="bg-white text-black border-black border-2 rounded-full h-16 w-16 flex items-center justify-center flex-shrink-0">
                   <CalendarDays className="h-8 w-8 text-primary " />
                 </div>

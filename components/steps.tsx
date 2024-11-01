@@ -5,17 +5,17 @@ import { Button } from "@/components/ui/button";
 export default function Steps() {
   return (
     <>
-     <section className="container px-[22rem]  mx-auto  py-8 text-black">
+     <section className="container lg:px-[22rem] bg-[#F6F7F9] lg:bg-white  mx-auto p-6  py-8 text-black">
         <div className="grid md:grid-cols-2 gap-20 items-center">
           <div className="">
-            <h2 className="text-5xl font-bold text-black mb-6">
+            <h2 className="text-3xl lg:text-5xl font-bold text-black mb-6">
               Easily apply for    
               <br />a personal loan online in 3 steps.
             </h2>
             <p className="text-gray-400 mb-6">
               Fixed rates from 8.99% APR to 29.49% APR reflect the 0.25% autopay interest rate discount and a 0.25% direct deposit interest rate discount.
             </p>
-            <Button className="h-14 rounded-none w-full text-white ">
+            <Button className="h-14 rounded-none w-full text-white bg-black hover:bg-gray-800 lg:bg-primary">
               VIEW YOUR RATE
             </Button>
           </div>
