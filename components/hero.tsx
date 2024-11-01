@@ -15,7 +15,7 @@ export default function Hero() {
         >
           <div className="mx-2 text-center  -mt-32">
             <div className="space-y-8">
-              <h1 className="text-gray-100 font-extrabold text-2xl  md:text-[5.5rem]">
+              <h1 className="text-gray-100 font-extrabold text-3xl  lg:text-[5.5rem]">
                 <span className="text-teal-500">Fast-Track Your Finances</span>
               </h1>
               <h2 className="text-gray-200 font-extrabold text-2xl  md:text-7xl leading-tight line-clamp-2">

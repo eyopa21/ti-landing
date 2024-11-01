@@ -9,7 +9,7 @@ import {
   FormControl,
   FormField,
   FormItem,
-  FormLabel,
+
   FormMessage,
 } from "@/components/ui/form";
 
@@ -17,6 +17,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
 import { Label } from "@radix-ui/react-label";
+import { Mail, Phone } from "lucide-react";
 const formSchema = z.object({
   name: z.string().min(2, {
     message: "Name must be at least 2 characters.",
@@ -58,14 +59,33 @@ export default function Contact() {
 
   return (
     <>
-      <section className="bg-blue-950 py-20">
-        <div className="  px-4">
+   
+      <section className="bg-black lg:bg-blue-950 py-20">
+        <div className=" px-8  lg:px-4">
           <div className="flex justify-center ">
-            <h2 className="text-5xl  w-2/3 font-bold text-white text-center mb-12">
+            <h2 className="text-4xl md:text-5xl w-full lg:w-2/3 font-bold text-white text-left lg:text-center mb-12">
               Get a free consultant from one of our experts right now!
             </h2>
           </div>
-          <div className="max-w-5xl mx-auto space-y-6 bg-white rounded-xl p-12">
+          <div className="block lg:hidden mb-16 space-y-16">
+            <div>
+              <p className="text-primary gap-2 mb-2 font-bold flex text-2xl items-center ">
+                <Phone /> Call for inquiry
+              </p>
+              <a href="tel:1-800 557 5192" className="text-4xl text-white font-bold">
+              1-800 557 5192
+              </a>
+            </div>
+            <div>
+              <p className="text-primary gap-2 mb-2 font-bold flex text-2xl items-center ">
+                <Mail /> Mail us for Inquiry
+              </p>
+              <a href="mailto:info@quikstartllc.com" className="text-[2.1rem] text-white font-bold">
+              info@quikstartllc.com
+              </a>
+            </div>
+          </div>
+          <div className="max-w-5xl mx-auto space-y-6 bg-white rounded-xl p-8 py-12  lg:p-12">
             <Form {...form}>
               <form
                 onSubmit={form.handleSubmit(onSubmit)}
@@ -173,7 +193,7 @@ export default function Contact() {
                             />
                           </FormControl>
                           <div className=" leading-none">
-                            <label className="text-xl text-primary">
+                            <label className="text-sm lg:text-xl text-primary">
                               I accept the privacy and terms
                             </label>
                           </div>

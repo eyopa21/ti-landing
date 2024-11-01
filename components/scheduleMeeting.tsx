@@ -21,8 +21,8 @@ export default function ScheduleMeeting() {
                   Can Transform Your Future
                 </p>
               </div>
-              <div className="text-2xl font-bold text-center px-2">
-              Schedule a Meeting Today and Discover How Hardshiprelief Can Transform Your Future
+              <div className="block lg:hidden text-2xl font-bold text-center px-2">
+               Schedule a Meeting Today and Discover How Hardshiprelief Can Transform Your Future
               </div>
            
             <Button className="mx-20 lg:mx-0">
