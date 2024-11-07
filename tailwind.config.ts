@@ -12,6 +12,10 @@ export default {
 
   theme: {
   	extend: {
+		fontFamily: {
+			sans: ['"Noto Sans"', 'sans-serif'], // Default sans, but you can change as needed
+   
+		},
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
