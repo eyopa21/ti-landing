@@ -11,17 +11,18 @@ export { Page };
 function Page() {
   return (
     <>
-      <Hero />
-      <Steps />
-      <ScheduleMeeting />
-      <div className="hidden lg:block">
-        <Testimonials />
+      <div className="">
+        <Hero />
+        <Steps />
+        {/* <ScheduleMeeting /> */}
+        <div className="hidden lg:block">
+          <Testimonials />
+        </div>
+        <div className="block lg:hidden">
+          <MobileTestimonials />
+        </div>
+        <Contact />
       </div>
-      <div className="block lg:hidden">
-        <MobileTestimonials />
-      </div>
-      <Contact />
-     
       
     </>
   );

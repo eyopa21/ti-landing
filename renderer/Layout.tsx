@@ -6,6 +6,7 @@ import type { PageContext } from "vike/types";
 import "./css/index.css";
 import "./Layout.css";
 import Header from "../components/nav/header";
+import BottomNav from "../components/nav/bottomNav";
 import { Button } from "@/components/ui/button";
 
 function Layout({
@@ -18,11 +19,32 @@ function Layout({
   return (
     <React.StrictMode>
       <PageContextProvider pageContext={pageContext}>
-        <Header />
-        <Slot>{children}</Slot>
         <Header>
-          <Button variant={"link"}>Privacy Policy</Button>
+          <div className="hidden md:flex items-center space-x-20">
+            <a
+              href="#"
+              className="text-white hover:text-orange-500 text-xl transition"
+            >
+              Home
+            </a>
+            <a
+              href="#"
+              className="text-white hover:text-orange-500 text-xl transition"
+            >
+              About
+            </a>
+            <a
+              href="#"
+              className="text-white hover:text-orange-500 text-xl transition"
+            >
+              Privacy Policy
+            </a>
+          </div>
         </Header>
+        <Slot>{children}</Slot>
+        <BottomNav/>
+          
+        
       </PageContextProvider>
     </React.StrictMode>
   );
