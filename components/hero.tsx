@@ -34,15 +34,15 @@ export default function Hero() {
               </motion.h1>
 
               <div className="mt-12 flex space-x-8">
+                <Link href="/purpose">
                 <Button
                 
                   size="lg"
                   className="bg-orange-500 hover:bg-orange-600 h-16 text-xl font-bold"
                 >
-                  <Link href="/purpose">
                   GET QUALIFIED
-                  </Link>
                 </Button>
+                  </Link>
                 <Button size="lg" className="h-16 !px-32 text-2xl font-bold">
                   <MessageCircleMore className="!size-8" />
                   CHAT NOW

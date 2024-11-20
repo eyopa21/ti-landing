@@ -94,7 +94,7 @@ export default function Header({ children }: { children?: React.ReactNode }) {
   );
 }
 
-function Logo() {
+export function Logo() {
   return (
     <div className="flex justify-start lg:w-0 lg:flex-1">
       <Link href="/" className="flex  lg:hidden items-center">

@@ -6,7 +6,7 @@ import { Link } from "../renderer/Link";
 export default function Steps() {
   return (
     <>
-      <section className="py-24 bg-white">
+      <section className="py-48 bg-white">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -15,29 +15,29 @@ export default function Steps() {
           >
             <div className="flex flex-row gap-8">
               <div className="w-[36rem]">
-               
-               <h2 className="text-[56px] leading-[68px]  font-bold text-blue-950 mb-6">
-                Easily apply for a personal loan online in 3 steps.
-              </h2>
-              <p className="text-gray-600 text-2xl font-[400] mb-12">
-                Fixed rates from 8.99% APR to 29.49% APR reflect the 0.25% autopay interest
-                rate discount and a 0.25% direct deposit interest rate discount.
-              </p>
+                <h2 className="text-[56px] leading-[68px]  font-bold text-blue-950 mb-6">
+                  Easily apply for a personal loan online in 3 steps.
+                </h2>
+                <p className="text-gray-600 text-2xl font-[400] mb-12">
+                  Fixed rates from 8.99% APR to 29.49% APR reflect the 0.25%
+                  autopay interest rate discount and a 0.25% direct deposit
+                  interest rate discount.
+                </p>
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.3 }}
                   className="mt-12"
                 >
-                 <Button
-                  size="lg"
-                  className="!w-full h-24 md:w-auto bg-orange-500 hover:bg-orange-600 text-[32px] rounded-2xl font-bold py-6 px-12"
-                >
                   <Link href="/purpose">
-                  VIEW YOUR RATE
+                    <Button
+                      size="lg"
+                      className="!w-full h-24 md:w-auto bg-orange-500 hover:bg-orange-600 text-[32px] rounded-2xl font-bold py-6 px-12"
+                    >
+                      VIEW YOUR RATE
+                    </Button>
                   </Link>
-                </Button>
-              </motion.div>
+                </motion.div>
               </div>
               <div className="space-y-6">
                 <StepCard
@@ -86,9 +86,7 @@ function StepCard({
       animate={{ opacity: 1, x: 0 }}
       transition={{ delay: Number(number) * 0.1 }}
     >
-      <Card
-        className="transition-all duration-300 border-none max-w-md"
-      >
+      <Card className="transition-all duration-300 border-none max-w-md">
         <CardContent className="p-6">
           <div className="flex items-start gap-6">
             <div

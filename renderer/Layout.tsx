@@ -7,7 +7,8 @@ import "./css/index.css";
 import "./Layout.css";
 import Header from "../components/nav/header";
 import BottomNav from "../components/nav/bottomNav";
-import { Button } from "@/components/ui/button";
+import { NavHeader } from "../components/nav/navHeader"; 
+
 
 function Layout({
   children,
@@ -16,10 +17,14 @@ function Layout({
   children: React.ReactNode;
   pageContext: PageContext;
 }) {
+  
+console.log(pageContext.urlPathname)
+
+ const isHomePage = pageContext.urlPathname === '/'
   return (
     <React.StrictMode>
       <PageContextProvider pageContext={pageContext}>
-        <Header>
+        {isHomePage ? ( <Header>
           <div className="hidden md:flex items-center space-x-20">
             <a
               href="#"
@@ -40,7 +45,10 @@ function Layout({
               Privacy Policy
             </a>
           </div>
-        </Header>
+        </Header>) : (
+          <NavHeader/>
+        )}
+       
         <Slot>{children}</Slot>
         <BottomNav/>
           
