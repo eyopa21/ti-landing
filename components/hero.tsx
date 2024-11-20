@@ -6,7 +6,7 @@ import { Link } from "../renderer/Link";
 export default function Hero() {
   return (
     <>
-      <div className="bg-[#0B2653] h-screen py-16 ">
+      <div className="bg-[#0B2653] min-h-screen py-16 ">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="">

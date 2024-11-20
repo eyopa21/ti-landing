@@ -61,7 +61,7 @@ export default function Contact() {
     <>
       <section className="relative">
         <div
-          className="py-32 bg-cover bg-center w-full h-screen "
+          className="py-32 bg-cover bg-center w-full min-h-screen "
           style={{
             backgroundImage: `
             linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 128, 0.7)),
