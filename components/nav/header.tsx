@@ -22,10 +22,10 @@ export default function Header({ children }: { children?: React.ReactNode }) {
             <Link href="/about">
               <Button
                 variant="default"
-                className="bg-orange-500 hover:bg-orange-600"
+                className="bg-orange-500 text-2xl font-bold hover:bg-orange-600"
               >
-                <PhoneCall className="mr-2 h-4 w-4" />
-                Call us 1-800-557-5192
+                {/* <PhoneCall className="mr-2 h-4 w-4" /> */}
+                Call Us 1-800-557-5192
               </Button>
             </Link>
           </div>

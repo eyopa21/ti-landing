@@ -23,9 +23,9 @@ console.log(pageContext.urlPathname)
  const isHomePage = pageContext.urlPathname === '/'
   return (
     <React.StrictMode>
-      <PageContextProvider pageContext={pageContext}>
+      <PageContextProvider pageContext={pageContext} >
         {isHomePage ? ( <Header>
-          <div className="hidden md:flex items-center space-x-20">
+          <div className="hidden md:flex items-center space-x-20  ">
             <a
               href="#"
               className="text-white hover:text-orange-500 text-xl transition"
@@ -49,7 +49,7 @@ console.log(pageContext.urlPathname)
           <NavHeader/>
         )}
        
-        <Slot>{children}</Slot>
+        <Slot >{children}</Slot>
         <BottomNav/>
           
         
@@ -60,7 +60,7 @@ console.log(pageContext.urlPathname)
 
 function Slot({ children }: { children: React.ReactNode }) {
   return (
-    <div id="page-container" className="bg-gray-50">
+    <div id="page-container" className="bg-gray-50  ">
       <div id="page-content">{children}</div>
     </div>
   );
