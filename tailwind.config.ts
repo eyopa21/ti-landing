@@ -12,12 +12,20 @@ export default {
 
   theme: {
   	extend: {
+		fontFamily: {
+			sans: ['"Noto Sans"', 'sans-serif'], // Default sans, but you can change as needed
+   
+		},
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
   		},
   		colors: {
+			
+				customCyan: '#01ADB2',
+			
+		
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {

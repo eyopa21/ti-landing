@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
 @import './reset.css';
 @import './links.css';
 @import './code.css';
@@ -64,6 +67,10 @@
     --chart-5: 340 75% 55%
   }
 }
+body {
+  @apply font-sans
+}
+
 @layer base {
   * {
     @apply border-border;
