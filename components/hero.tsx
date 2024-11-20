@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { Percent, DollarSign, Globe, MessageCircleMore } from "lucide-react";
+import { Link } from "../renderer/Link";
 
 export default function Hero() {
   return (
@@ -34,10 +35,13 @@ export default function Hero() {
 
               <div className="mt-12 flex space-x-8">
                 <Button
+                
                   size="lg"
                   className="bg-orange-500 hover:bg-orange-600 h-16 text-xl font-bold"
                 >
+                  <Link href="/purpose">
                   GET QUALIFIED
+                  </Link>
                 </Button>
                 <Button size="lg" className="h-16 !px-32 text-2xl font-bold">
                   <MessageCircleMore className="!size-8" />

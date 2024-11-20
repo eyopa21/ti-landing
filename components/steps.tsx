@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
+import { Link } from "../renderer/Link";
 
 export default function Steps() {
   return (
@@ -32,7 +33,9 @@ export default function Steps() {
                   size="lg"
                   className="!w-full h-24 md:w-auto bg-orange-500 hover:bg-orange-600 text-[32px] rounded-2xl font-bold py-6 px-12"
                 >
+                  <Link href="/purpose">
                   VIEW YOUR RATE
+                  </Link>
                 </Button>
               </motion.div>
               </div>
