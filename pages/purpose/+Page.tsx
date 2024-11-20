@@ -1,6 +1,31 @@
 export { Page };
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
+import {
+  Menubar,
+  MenubarCheckboxItem,
+  MenubarContent,
+  MenubarItem,
+  MenubarMenu,
+  MenubarRadioGroup,
+  MenubarRadioItem,
+  MenubarSeparator,
+  MenubarShortcut,
+  MenubarSub,
+  MenubarSubContent,
+  MenubarSubTrigger,
+  MenubarTrigger,
+} from "@/components/ui/menubar";
+
+
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
 
 import {
   CreditCard,
@@ -28,7 +53,7 @@ function Page() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-2xl font-semibold text-center text-navy-900">
+              <h2 className="text-2xl font-semibopnpmld text-center text-navy-900">
                 Access a full cash advance—repay in simple, manageable
                 installments!
               </h2>
@@ -62,13 +87,39 @@ function Page() {
                   label="Business"
                   className="bg-orange-500 hover:bg-orange-600 text-white"
                 />
-                <Button
-                  variant="outline"
-                  className="w-full justify-between text-lg py-6"
-                >
-                  More Options
-                  <ChevronDown className="h-5 w-5" />
-                </Button>
+
+               <Menubar className="border-none !w-full bg-blue-500 p-0">
+               <MenubarMenu >
+                  <MenubarTrigger className="w-full bg-gray-200">
+                    
+                    <Button
+                      variant="outline"
+                      className="!w-full justify-between text-lg py-6"
+                    >
+                      More Options
+                      <ChevronDown className="h-5 w-5" />
+                    </Button>
+                  </MenubarTrigger>
+                  <MenubarContent className="w-full">
+                    <div className="bg-red-500 w-8s">
+helloooooooooooooooooooooooooooooooo
+                    </div>
+                    
+                  </MenubarContent>
+                </MenubarMenu>
+               </Menubar>
+               <Select>
+      <SelectTrigger className="w-full">
+        <SelectValue placeholder="More Options" />
+      </SelectTrigger>
+      <SelectContent>
+        <SelectGroup>
+          <SelectItem value="option1">Option 1</SelectItem>
+          <SelectItem value="option2">Option 2</SelectItem>
+          <SelectItem value="option3">Option 3</SelectItem>
+        </SelectGroup>
+      </SelectContent>
+    </Select>
               </div>
 
               <div className="text-center text-sm text-gray-500 mt-8">
@@ -94,7 +145,9 @@ function LoanOption({
   className?: string;
 }) {
   return (
-    <Button className={`w-full justify-start font-[600] py-10 text-2xl ${className}`}>
+    <Button
+      className={`w-full justify-start font-[600] py-10 text-2xl ${className}`}
+    >
       <span className="mr-4">{icon}</span>
       {label}
     </Button>
